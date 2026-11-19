@@ -47,7 +47,7 @@ class _FavoriteCardState extends State<FavoriteCard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Title",
+                  widget.title,
                   style: TextStyle(
                     color: Colors.blue,
                     fontSize: 16,
@@ -55,7 +55,7 @@ class _FavoriteCardState extends State<FavoriteCard> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                Text("Description"),
+                Text(widget.description),
               ],
             ),
           ),
